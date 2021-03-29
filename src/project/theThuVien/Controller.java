@@ -3,6 +3,7 @@ package project.theThuVien;
 import javafx.application.Platform;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
@@ -55,6 +56,12 @@ public class Controller implements Initializable {
             ds.add(tSV);
             tbView.setItems(ds);
         }
+    }
+    public void Xoa(ActionEvent actionEvent){
+        ObservableList<TheSV> allThe,SingleThe;
+        allThe=tbView.getItems();
+        SingleThe=tbView.getSelectionModel().getSelectedItems();
+        SingleThe.forEach(allThe::remove);
     }
     public void Thoat(){
         Platform.exit();

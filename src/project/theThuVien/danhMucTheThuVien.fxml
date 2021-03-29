@@ -38,8 +38,8 @@
       <Button layoutX="668.0" layoutY="416.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="58.0" text="       Tìm" textAlignment="CENTER" />
       <TextField fx:id="Tim" layoutX="551.0" layoutY="416.0" prefHeight="21.0" prefWidth="109.0" />
       <Button onAction="#Thoat" layoutX="651.0" layoutY="311.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="77.0" text="        Thoát" textAlignment="CENTER" />
-      <Button layoutX="554.0" layoutY="310.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="77.0" text="        In ra" textAlignment="CENTER" />
-      <Button layoutX="651.0" layoutY="257.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="77.0" text="       Xoá" textAlignment="CENTER" />
+      <Button layoutX="554.0" layoutY="310.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="77.0" text="        Lưu" textAlignment="CENTER" />
+      <Button onAction="#Xoa" layoutX="651.0" layoutY="257.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="77.0" text="       Xoá" textAlignment="CENTER" />
       <Button onAction="#Them" layoutX="554.0" layoutY="257.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="77.0" text="       Thêm" textAlignment="CENTER" />
       <TableView fx:id="tbView" layoutX="17.0" layoutY="236.0" prefHeight="236.0" prefWidth="530.0">
          <columns>

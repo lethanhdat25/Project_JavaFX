@@ -21,27 +21,27 @@
       <Button layoutX="947.0" layoutY="143.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="124.0" text="       In" />
       <ImageView fitHeight="31.0" fitWidth="23.0" layoutX="123.0" layoutY="145.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../Project_JavaFX1/src/project/image/iconThem.png" />
+            <Image url="@../image/iconThem.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="26.0" fitWidth="23.0" layoutX="316.0" layoutY="146.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../Project_JavaFX1/src/project/image/save.png" />
+            <Image url="@../image/save.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="25.0" fitWidth="23.0" layoutX="517.0" layoutY="147.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../Project_JavaFX1/src/project/image/iconXoa.png" />
+            <Image url="@../image/iconXoa.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="22.0" fitWidth="23.0" layoutX="745.0" layoutY="148.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../Project_JavaFX1/src/project/image/fix.png" />
+            <Image url="@../image/fix.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="25.0" fitWidth="21.0" layoutX="960.0" layoutY="146.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../Project_JavaFX1/src/project/image/iconIn.png" />
+            <Image url="@../image/iconIn.png" />
          </image>
       </ImageView>
       <Button layoutX="43.0" layoutY="742.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="124.0" text="     Tìm kiếm" />
@@ -49,7 +49,7 @@
          <graphic>
             <ImageView fitHeight="26.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../Project_JavaFX1/src/project/image/iconTim.png" />
+                  <Image url="@../image/iconTim.png" />
                </image>
             </ImageView>
          </graphic>
@@ -58,14 +58,14 @@
          <graphic>
             <ImageView fitHeight="26.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../Project_JavaFX1/src/project/image/leftarrow.png" />
+                  <Image url="@../image/leftarrow.png" />
                </image>
             </ImageView>
          </graphic>
       </Button>
       <ImageView fitHeight="26.0" fitWidth="23.0" layoutX="53.0" layoutY="747.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../Project_JavaFX1/src/project/image/rightarrow.png" />
+            <Image url="@../image/rightarrow.png" />
          </image>
       </ImageView>
       <TableView layoutX="459.0" layoutY="272.0" prefHeight="403.0" prefWidth="774.0">
