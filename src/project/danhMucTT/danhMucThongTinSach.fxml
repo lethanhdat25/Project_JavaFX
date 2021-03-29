@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane fx:controller="project.danhMucTT.Controller" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="813.0" prefWidth="1283.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text layoutX="406.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DANH MỤC THÔNG TIN SÁCH">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Text>
+      <Button layoutX="105.0" layoutY="143.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="124.0" text="     Thêm" />
+      <Button layoutX="307.0" layoutY="143.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="124.0" text="     Lưu" />
+      <Button layoutX="506.0" layoutY="143.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="124.0" text="     Xóa" />
+      <Button layoutX="730.0" layoutY="144.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="124.0" text="     Sửa" />
+      <Button layoutX="947.0" layoutY="143.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="124.0" text="       In" />
+      <ImageView fitHeight="31.0" fitWidth="23.0" layoutX="123.0" layoutY="145.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Project_JavaFX1/src/project/image/iconThem.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="26.0" fitWidth="23.0" layoutX="316.0" layoutY="146.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Project_JavaFX1/src/project/image/save.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="23.0" layoutX="517.0" layoutY="147.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Project_JavaFX1/src/project/image/iconXoa.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="22.0" fitWidth="23.0" layoutX="745.0" layoutY="148.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Project_JavaFX1/src/project/image/fix.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="21.0" layoutX="960.0" layoutY="146.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Project_JavaFX1/src/project/image/iconIn.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="43.0" layoutY="742.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="124.0" text="     Tìm kiếm" />
+      <Button layoutX="630.0" layoutY="733.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="124.0">
+         <graphic>
+            <ImageView fitHeight="26.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Project_JavaFX1/src/project/image/iconTim.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="1009.0" layoutY="733.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="124.0">
+         <graphic>
+            <ImageView fitHeight="26.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Project_JavaFX1/src/project/image/leftarrow.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <ImageView fitHeight="26.0" fitWidth="23.0" layoutX="53.0" layoutY="747.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Project_JavaFX1/src/project/image/rightarrow.png" />
+         </image>
+      </ImageView>
+      <TableView layoutX="459.0" layoutY="272.0" prefHeight="403.0" prefWidth="774.0">
+        <columns>
+          <TableColumn prefWidth="107.0" text="Mã sách" />
+          <TableColumn prefWidth="155.0" text="Tên sách" />
+            <TableColumn prefWidth="120.0" text="Thể loại" />
+            <TableColumn prefWidth="104.0" text="Tình trạng" />
+            <TableColumn prefWidth="99.0" text="Số lượng" />
+            <TableColumn prefWidth="83.0" text="Mã NXB" />
+            <TableColumn prefWidth="105.0" text="Năm NXB" />
+        </columns>
+      </TableView>
+      <Text layoutX="459.0" layoutY="238.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bảng thông tin">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="63.0" layoutY="238.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thông tin sách">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="63.0" layoutY="303.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mã sách" />
+      <Text layoutX="64.0" layoutY="369.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tên sách" />
+      <Text layoutX="64.0" layoutY="434.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thể loại" />
+      <Text layoutX="61.0" layoutY="499.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tình trạng" />
+      <Text layoutX="60.0" layoutY="570.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Số lượng" />
+      <Text layoutX="63.0" layoutY="635.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mã NXB" />
+      <Text layoutX="60.0" layoutY="696.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Năm NXB" />
+      <TextField layoutX="190.0" layoutY="675.0" />
+      <TextField layoutX="190.0" layoutY="614.0" />
+      <TextField layoutX="190.0" layoutY="549.0" />
+      <TextField layoutX="190.0" layoutY="477.0" />
+      <TextField layoutX="190.0" layoutY="412.0" />
+      <TextField layoutX="190.0" layoutY="347.0" />
+      <TextField layoutX="190.0" layoutY="281.0" />
+      <TextField layoutX="193.0" layoutY="742.0" promptText="Tên sách ..." />
+      <Line endX="100.0" layoutX="90.0" layoutY="201.0" startX="-100.0" />
+      <Line endX="100.0" layoutX="283.0" layoutY="201.0" startX="-100.0" />
+      <Line endX="100.0" layoutX="470.0" layoutY="201.0" startX="-100.0" />
+      <Line endX="100.0" layoutX="665.0" layoutY="201.0" startX="-100.0" />
+      <Line endX="100.0" layoutX="854.0" layoutY="201.0" startX="-100.0" />
+      <Line endX="100.0" layoutX="1032.0" layoutY="201.0" startX="-100.0" />
+      <Line endX="100.0" layoutX="1204.0" layoutY="201.0" startX="-100.0" />
+   </children>
+</Pane>
