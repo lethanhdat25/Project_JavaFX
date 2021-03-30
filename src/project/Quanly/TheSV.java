@@ -1,6 +1,7 @@
 package project.Quanly;
 
 public class TheSV {
+    Integer maThe;
     String name;
     String sdt;
     String Diachi;
@@ -9,7 +10,8 @@ public class TheSV {
     String NgaySinh;
     String Sex;
 
-    public TheSV(String name, String sdt, String diachi, String ngayTao, String ngayHH, String ngaySinh, String sex) {
+    public TheSV(Integer maThe,String name, String sdt, String diachi, String ngayTao, String ngayHH, String ngaySinh, String sex) {
+        this.maThe=maThe;
         this.name = name;
         this.sdt = sdt;
         Diachi = diachi;
@@ -18,6 +20,15 @@ public class TheSV {
         NgaySinh = ngaySinh;
         Sex = sex;
     }
+
+    public Integer getMaThe() {
+        return maThe;
+    }
+
+    public void setMaThe(Integer maThe) {
+        this.maThe = maThe;
+    }
+
 
     public String getName() {
         return name;

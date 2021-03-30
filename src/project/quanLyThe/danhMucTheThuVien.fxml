@@ -8,7 +8,7 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<Pane fx:controller="project.theThuVien.Controller" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="494.0" prefWidth="752.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<Pane fx:controller="project.quanLyThe.Controller" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="494.0" prefWidth="752.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <Text layoutX="267.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DANH MỤC THẺ THƯ VIỆN" wrappingWidth="218.20068359375">
          <font>
@@ -35,21 +35,21 @@
       <Text layoutX="44.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Điện Thoại" />
       <Text layoutX="44.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tên SV" />
       <Text layoutX="29.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thông Tin Sinh Viên" />
-      <Button layoutX="668.0" layoutY="416.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="58.0" text="       Tìm" textAlignment="CENTER" />
+      <Button onAction="#Tim" layoutX="668.0" layoutY="416.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="58.0" text="       Tìm" textAlignment="CENTER" />
       <TextField fx:id="Tim" layoutX="551.0" layoutY="416.0" prefHeight="21.0" prefWidth="109.0" />
       <Button onAction="#Thoat" layoutX="651.0" layoutY="311.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="77.0" text="        Thoát" textAlignment="CENTER" />
-      <Button layoutX="554.0" layoutY="310.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="77.0" text="        Lưu" textAlignment="CENTER" />
+      <Button onAction="#Luu" layoutX="554.0" layoutY="310.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="77.0" text="        Lưu" textAlignment="CENTER" />
       <Button onAction="#Xoa" layoutX="651.0" layoutY="257.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="77.0" text="       Xoá" textAlignment="CENTER" />
       <Button onAction="#Them" layoutX="554.0" layoutY="257.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="77.0" text="       Thêm" textAlignment="CENTER" />
       <TableView fx:id="tbView" layoutX="17.0" layoutY="236.0" prefHeight="236.0" prefWidth="530.0">
          <columns>
-            <TableColumn fx:id="MaThe" prefWidth="75.0" text="Mã Thẻ" />
-            <TableColumn fx:id="tbTen" prefWidth="75.0" text="Tên SV" />
-            <TableColumn fx:id="tbSdt" prefWidth="75.0" text="Điện Thoại" />
+            <TableColumn fx:id="MaThe" prefWidth="60.0" text="Mã Thẻ" />
+            <TableColumn fx:id="tbTen" prefWidth="120.0" text="Tên SV" />
+            <TableColumn fx:id="tbSdt" prefWidth="90.0" text="Điện Thoại" />
             <TableColumn fx:id="tbSex" prefWidth="70.0" text="Giới Tính" />
             <TableColumn fx:id="tbNS" text="Ngày Sinh" />
             <TableColumn fx:id="tbDiachi" minWidth="0.0" prefWidth="64.0" text="Địa chỉ" />
-            <TableColumn fx:id="tbNT" prefWidth="75.0" text="Ngày Tạo" />
+            <TableColumn fx:id="tbNT" prefWidth="90.0" text="Ngày Tạo" />
             <TableColumn fx:id="tbNH" prefWidth="90.0" text="Ngày  hết hạn" />
          </columns>
       </TableView>
