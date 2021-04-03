@@ -18,7 +18,7 @@ public class Controller  {
         Main.menuStage.setScene(new Scene(root, 1283, 813));
         Main.menuStage.show();
     }
-    public  void muontra() throws IOException {
+    public  void thuvien() throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("../quanlythe/danhMucTheThuVien.fxml"));
         Main.menuStage.setTitle("Hello World");
         Main.menuStage.setScene(new Scene(root, 1283, 813));

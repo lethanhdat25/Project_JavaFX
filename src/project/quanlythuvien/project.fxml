@@ -25,7 +25,7 @@
                </image>
             </ImageView>
          </graphic></Button>
-      <Button layoutX="843.0" layoutY="282.0" mnemonicParsing="false" onAction="#muontra" prefHeight="95.0" prefWidth="290.0" style="-fx-background-color: #15b244; -fx-border-style: solid;" text="     Quản lý mượn trả" textAlignment="RIGHT" textFill="WHITE">
+      <Button layoutX="843.0" layoutY="282.0" mnemonicParsing="false" onAction="#thuvien" prefHeight="95.0" prefWidth="290.0" style="-fx-background-color: #15b244; -fx-border-style: solid;" text="     Thẻ thư viện" textAlignment="RIGHT" textFill="WHITE">
          <font>
             <Font name="System Bold" size="16.0" />
          </font>
@@ -47,7 +47,7 @@
                </image>
             </ImageView>
          </graphic></Button>
-      <Button layoutX="151.0" layoutY="597.0" mnemonicParsing="false" onAction="#sach" prefHeight="95.0" prefWidth="290.0" style="-fx-background-color: #15b244; -fx-border-style: solid;" text="     Quản lý sách" textAlignment="RIGHT" textFill="WHITE">
+      <Button layoutX="151.0" layoutY="597.0" mnemonicParsing="false" onAction="#sach" prefHeight="95.0" prefWidth="290.0" style="-fx-background-color: #15b244; -fx-border-style: solid;" text="     Thông tin sách" textAlignment="RIGHT" textFill="WHITE">
          <font>
             <Font name="System Bold" size="16.0" />
          </font>
