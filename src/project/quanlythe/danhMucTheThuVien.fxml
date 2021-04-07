@@ -8,7 +8,7 @@
 <?import javafx.scene.text.*?>
 <?import javafx.scene.layout.*?>
 
-<Pane fx:controller="project.quanlythe.Controller" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="494.0" prefWidth="752.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="494.0" prefWidth="752.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.quanlythe.Controller">
    <children>
       <Text layoutX="478.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DANH MỤC THẺ THƯ VIỆN" wrappingWidth="327.20068359375">
          <font>
@@ -30,17 +30,7 @@
          <font>
             <Font size="17.0" />
          </font></Text>
-      <DatePicker fx:id="NgayHH" layoutX="777.0" layoutY="138.0" prefHeight="31.0" prefWidth="161.0" />
-      <MenuButton fx:id="Sex" layoutX="191.0" layoutY="185.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="84.0" text="Nam">
-         <items>
-            <MenuItem mnemonicParsing="false" text="Nam" />
-            <MenuItem mnemonicParsing="false" text="Nữ" />
-         </items>
-      </MenuButton>
-      <Text layoutX="53.0" layoutY="206.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Giới Tính" wrappingWidth="84.0">
-         <font>
-            <Font size="17.0" />
-         </font></Text>
+      <DatePicker fx:id="NgayHH" layoutX="777.0" layoutY="138.0" prefHeight="31.0" prefWidth="161.0" />      <Text layoutX="53.0" layoutY="206.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Giới Tính" wrappingWidth="84.0" />
       <TextField fx:id="Sdt" layoutX="191.0" layoutY="136.0" />
       <TextField fx:id="TenSV" layoutX="191.0" layoutY="93.0" />
       <Text layoutX="54.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Điện Thoại" />
@@ -92,14 +82,13 @@
          </graphic></Button>
       <TableView fx:id="tbView" layoutX="23.0" layoutY="299.0" prefHeight="476.0" prefWidth="894.0">
          <columns>
-            <TableColumn fx:id="MaThe" prefWidth="60.0" text="Mã Thẻ" />
-            <TableColumn fx:id="tbTen" prefWidth="139.0" text="Tên SV" />
-            <TableColumn fx:id="tbSdt" prefWidth="86.0" text="Điện Thoại" />
-            <TableColumn fx:id="tbSex" prefWidth="79.0" text="Giới Tính" />
-            <TableColumn fx:id="tbNS" prefWidth="103.0" text="Ngày Sinh" />
-            <TableColumn fx:id="tbDiachi" minWidth="0.0" prefWidth="138.0" text="Địa chỉ" />
-            <TableColumn fx:id="tbNT" prefWidth="146.0" text="Ngày Tạo" />
-            <TableColumn fx:id="tbNH" prefWidth="142.0" text="Ngày  hết hạn" />
+            <TableColumn fx:id="tbTen" prefWidth="127.0" text="Tên SV" />
+            <TableColumn fx:id="tbSdt" prefWidth="98.0" text="Điện Thoại" />
+            <TableColumn fx:id="tbSex" prefWidth="83.0" text="Giới Tính" />
+            <TableColumn fx:id="tbNS" prefWidth="99.0" text="Ngày Sinh" />
+            <TableColumn fx:id="tbDiachi" minWidth="0.0" prefWidth="178.0" text="Địa chỉ" />
+            <TableColumn fx:id="tbNT" prefWidth="148.0" text="Ngày Tạo" />
+            <TableColumn fx:id="tbNH" prefWidth="160.0" text="Ngày  hết hạn" />
          </columns>
       </TableView>
       <Text layoutX="23.0" layoutY="277.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bảng Thông Tin Thẻ Thư Viện" wrappingWidth="419.17578125">
@@ -118,5 +107,11 @@
       <Line endX="100.0" layoutX="878.0" layoutY="240.0" startX="-100.0" />
       <Line endX="100.0" layoutX="1073.0" layoutY="240.0" startX="-100.0" />
       <Line endX="100.0" layoutX="1181.0" layoutY="240.0" startX="-100.0" />
+      <TextField fx:id="Sex" layoutX="191.0" layoutY="180.0" prefHeight="27.0" prefWidth="109.0" />
+      <Button layoutX="711.0" layoutY="252.0" mnemonicParsing="false" onAction="#thayDoi" prefHeight="31.0" prefWidth="98.0" text="Thay Doi" />
+      <Text fx:id="thongbao" fill="RED" layoutX="422.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="410.22900390625">
+         <font>
+            <Font size="20.0" />
+         </font></Text>
    </children>
 </Pane>

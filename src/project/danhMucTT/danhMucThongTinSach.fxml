@@ -42,13 +42,12 @@
       <Button layoutX="1131.0" layoutY="742.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="102.0" text="Trang chủ" />
       <TableView fx:id="tbView" layoutX="403.0" layoutY="272.0" prefHeight="403.0" prefWidth="830.0">
          <columns>
-            <TableColumn fx:id="MS" text="Mã sách" />
             <TableColumn fx:id="TS" prefWidth="182.0" text="Tên sách" />
-            <TableColumn fx:id="TL" prefWidth="137.0" text="Thể loại" />
-            <TableColumn fx:id="TT" prefWidth="131.0" text="Tình trạng" />
-            <TableColumn fx:id="SL" prefWidth="76.0" text="Số lượng" />
-            <TableColumn fx:id="MNXB" prefWidth="105.0" text="Mã NXB" />
-            <TableColumn fx:id="NNXB" prefWidth="118.0" text="Năm NXB" />
+            <TableColumn fx:id="TL" prefWidth="131.0" text="Thể loại" />
+            <TableColumn fx:id="TT" prefWidth="137.0" text="Tình trạng" />
+            <TableColumn fx:id="SL" prefWidth="88.0" text="Số lượng" />
+            <TableColumn fx:id="MNXB" prefWidth="114.0" text="Mã NXB" />
+            <TableColumn fx:id="NNXB" prefWidth="177.0" text="Năm NXB" />
          </columns>
       </TableView>
       <Text layoutX="752.0" layoutY="236.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bảng thông tin">
