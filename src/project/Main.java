@@ -7,13 +7,14 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 public class Main extends Application {
-    public static Stage menuStage ;
+    public static Stage menuStage;
+    @Override
     public void start(Stage primaryStage) throws Exception{
-        menuStage=primaryStage;
-        Parent root = FXMLLoader.load(getClass().getResource("quanlythuvien/project.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("quanlythe/danhMucTheThuVien.fxml"));
         primaryStage.setTitle("Hello World");
         primaryStage.setScene(new Scene(root, 1283, 813));
         primaryStage.show();
+        menuStage = primaryStage;
     }
 
 
