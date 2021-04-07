@@ -1,7 +1,5 @@
-package project.sql;
+package project.TheSV;
 
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
 import project.Quanly.TheSV;
 import project.config.Connector;
 

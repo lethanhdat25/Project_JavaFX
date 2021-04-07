@@ -1,24 +1,23 @@
 package project.quanlythe;
-
-import javafx.application.Platform;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-import javafx.event.ActionEvent;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.text.Text;
+import project.Main;
 import project.Quanly.TheSV;
-import project.sql.ModelTheSV;
-
+import project.TheSV.ModelTheSV;
 import java.net.URL;
 import java.time.LocalDate;
 import java.util.ResourceBundle;
 
 public class Controller implements Initializable {
-    public static Integer indentity;
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        MaThe.setCellValueFactory(new PropertyValueFactory<TheSV,Integer>("maThe"));
         tbTen.setCellValueFactory(new PropertyValueFactory<TheSV,String>("name"));
         tbSdt.setCellValueFactory(new PropertyValueFactory<TheSV,String>("sdt"));
         tbDiachi.setCellValueFactory(new PropertyValueFactory<TheSV,String>("Diachi"));
@@ -29,12 +28,13 @@ public class Controller implements Initializable {
         try{
             ModelTheSV modelTheSV=new ModelTheSV();
             ds.addAll(modelTheSV.getList());
-            indentity=ds.size();
             tbView.setItems(ds);
         }catch (Exception e){
 
         }
+
     }
+    public Text thongbao;
     public TextField TenSV;
     public TextField Sdt;
     public TextField Diachi;
@@ -42,20 +42,21 @@ public class Controller implements Initializable {
     public DatePicker NgaySinh;
     public DatePicker NgayTao;
     public DatePicker NgayHH;
-    public MenuButton Sex;
+    public TextField Sex;
     ObservableList<TheSV> ds= FXCollections.observableArrayList();
     ObservableList<TheSV> dsTim= FXCollections.observableArrayList();
     public TableView<TheSV> tbView;
-    public TableColumn<TheSV, Integer> MaThe;
     public TableColumn<TheSV,String> tbTen;
     public TableColumn<TheSV,String> tbSex;
     public TableColumn<TheSV,String> tbSdt;
     public TableColumn<TheSV,String> tbNS;
     public TableColumn<TheSV,String> tbNT;
     public TableColumn<TheSV,String> tbNH;
+    public static TheSV edit;
     public TableColumn<TheSV,String> tbDiachi;
 
     public void Them(){
+        thongbao.setText("");
         String n=TenSV.getText();
         String sdt=Sdt.getText();
         String dC=Diachi.getText();
@@ -63,21 +64,24 @@ public class Controller implements Initializable {
         LocalDate nT=NgayTao.getValue();
         LocalDate nHH=NgayHH.getValue();
         String sex=Sex.getText();
-        if (n!=null && sdt!=null && dC!=null && nS!=null && nT!=null && nHH!=null && sex!=null){
-            TheSV tSV=new TheSV(null,n,sdt,dC,nT.toString(),nHH.toString(),nS.toString(),sex);
+        if (!n.isEmpty()&&!sdt.isEmpty()&&!dC.isEmpty()&&!nT.toString().isEmpty()&&!nHH.toString().isEmpty()&&!nS.toString().isEmpty()&&!sex.isEmpty()){
+            TheSV tSV = new TheSV(null, n, sdt, dC, nT.toString(), nHH.toString(), nS.toString(), sex);
             ds.add(tSV);
             tbView.setItems(ds);
+            TenSV.setText("");
+            Sdt.setText("");
+            Diachi.setText("");
+            Sex.setText("");
+        }else{
+            thongbao.setText("Ban phai nhap thong tin day du!");
         }
+
     }
-    public void Xoa(ActionEvent actionEvent){
+    public void Xoa(){
         TheSV layTen=tbView.getSelectionModel().getSelectedItem();
         TenSV.setText(layTen.getName());
         ModelTheSV modelTheSV=new ModelTheSV();
         if (modelTheSV.Xoa(layTen)){
-            System.out.println("Da xoa thanh cong");
-        }else{
-            System.out.println("Xoa khong thanh cong");
-
         }
         tbView.getItems().remove(layTen);
     }
@@ -85,11 +89,7 @@ public class Controller implements Initializable {
         ModelTheSV modelTheSV=new ModelTheSV();
         for (TheSV sv:
                 ds) {
-            System.out.println(sv.getName());
             if(modelTheSV.Luu(sv.getMaThe(),sv.getName(),sv.getSdt(),sv.getDiachi(),sv.getNgayTao(),sv.getNgayHH(),sv.getNgaySinh(),sv.getSex())){
-                System.out.println("them thanh cong");
-            }else{
-                System.out.println("Them that bai");
             }
         }
     }
@@ -99,7 +99,13 @@ public class Controller implements Initializable {
         dsTim.addAll(modelTheSV.Tim(Tim.getText()));
         tbView.setItems(dsTim);
     }
-    public void Thoat(){
-        Platform.exit();
+    public void thayDoi(){
+
+    }
+    public void Thoat() throws Exception{
+        Parent root = FXMLLoader.load(getClass().getResource("../quanlythuvien/project.fxml"));
+        Main.menuStage.setTitle("Hello World");
+        Main.menuStage.setScene(new Scene(root, 1283, 813));
+        Main.menuStage.show();
     }
 }
