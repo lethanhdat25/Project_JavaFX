@@ -9,7 +9,7 @@ public class Connector {
     Statement statement;
     public final static String connectString="jdbc:mysql://localhost:3306/T2008M";
     public final static String user="root";
-    public final static String password="";
+    public final static String password="root";
 
     private Connector(){
         try{
@@ -17,7 +17,7 @@ public class Connector {
             Connection conn= DriverManager.getConnection(connectString,user,password);
             setStatement(conn.createStatement());
         }catch (Exception e){
-            System.out.println(e.getMessage());
+
         }
 
     }

@@ -17,7 +17,7 @@ public class ModelSach implements DataAccessObject2<ThongTinSach> {
             String txt_sql="select * from thongtinsach";
             ResultSet rs=st.executeQuery(txt_sql);
             while (rs.next()){
-                ThongTinSach ts = new ThongTinSach(rs.getString("tenSach"),rs.getString("theLoai"),rs.getString("tinhTrang"),rs.getInt("soLuong"),rs.getString("maNXB"),rs.getInt("namNXB"));
+                ThongTinSach ts = new ThongTinSach(rs.getInt("id"),rs.getString("tenSach"),rs.getString("theLoai"),rs.getString("tinhTrang"),rs.getInt("soLuong"),rs.getString("maNXB"),rs.getInt("namNXB"));
                 tts.add(ts);
             }
         }catch (Exception e){
@@ -34,7 +34,7 @@ public class ModelSach implements DataAccessObject2<ThongTinSach> {
             Statement st = Connector.getInstance().getStatement();
             ResultSet rs = st.executeQuery(txt_sql);
             while (rs.next()){
-                ThongTinSach thongTinSach=new ThongTinSach(rs.getString("tenSach"),rs.getString("theLoai"),rs.getString("tinhTrang"),rs.getInt("soLuong"),rs.getString("maNXB"),rs.getInt("namNXB"));
+                ThongTinSach thongTinSach=new ThongTinSach(rs.getInt("id"),rs.getString("tenSach"),rs.getString("theLoai"),rs.getString("tinhTrang"),rs.getInt("soLuong"),rs.getString("maNXB"),rs.getInt("namNXB"));
                 dss.add(thongTinSach);
             }
         }catch (Exception e){
@@ -69,7 +69,7 @@ public class ModelSach implements DataAccessObject2<ThongTinSach> {
         }
         return false;
     }
-    }
+}
 
 
 
