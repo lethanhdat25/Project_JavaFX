@@ -1,30 +1,20 @@
 package project.Quanly;
 
-public class thongTinSach {
-    Integer Masach;
+public class ThongTinSach {
     String  Tensach;
     String Theloai;
     String Tinhtrang;
     Integer Soluong;
     String MaNXB;
-    String NamNXB;
+    Integer NamNXB;
 
-    public thongTinSach(Integer masach, String tensach, String theloai, String tinhtrang, Integer soluong, String maNXB, String namNXB) {
-        Masach = masach;
+    public ThongTinSach(String tensach, String theloai, String tinhtrang, Integer soluong, String maNXB, Integer namNXB) {
         Tensach = tensach;
         Theloai = theloai;
         Tinhtrang = tinhtrang;
         Soluong = soluong;
         MaNXB = maNXB;
         NamNXB = namNXB;
-    }
-
-    public Integer getMasach() {
-        return Masach;
-    }
-
-    public void setMasach(Integer masach) {
-        Masach = masach;
     }
 
     public String getTensach() {
@@ -67,12 +57,11 @@ public class thongTinSach {
         MaNXB = maNXB;
     }
 
-    public String getNamNXB() {
+    public Integer getNamNXB() {
         return NamNXB;
     }
 
-    public void setNamNXB(String namNXB) {
+    public void setNamNXB(Integer namNXB) {
         NamNXB = namNXB;
     }
-
 }
